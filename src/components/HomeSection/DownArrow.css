@@ -1,0 +1,40 @@
+.down-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    bottom: 0;
+    margin-top: 22.4%;
+    margin-left: 47.2%;
+    cursor: pointer;
+}
+
+.down-arrow {
+    top: 12px;
+    bottom: 10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+}
