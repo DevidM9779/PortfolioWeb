@@ -1,13 +1,10 @@
 import './DownArrow.css'
 
 export const DownArrow = () => {
-    const scrollDown = () => {
-        // TODO: CODE TO SCROLL DOWN HERE
-    }
 
     return (
-        <div className={"down-arrow-container"} onClick={scrollDown}>
+        <a className={"down-arrow-container"} href={"#about"}>
             <div className={'down-arrow'}/>
-        </div>
+        </a>
     )
 }

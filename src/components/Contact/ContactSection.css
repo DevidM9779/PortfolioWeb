@@ -1,0 +1,15 @@
+.contact-container {
+    display: flex;
+    background-color: #2B2d2F;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    margin-top: 100vh;
+    padding-top: 100px;
+}
+
+.contact-title {
+    width: 100%;
+    font-size: 44px;
+    padding: 15px;
+}

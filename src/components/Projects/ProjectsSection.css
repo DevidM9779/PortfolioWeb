@@ -1,0 +1,15 @@
+.projects-container {
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+
+}
+
+.projects-title {
+    width: 100%;
+    font-size: 44px;
+    padding: 15px;
+}

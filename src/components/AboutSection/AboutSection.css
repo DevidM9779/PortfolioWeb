@@ -1,15 +1,28 @@
 .about-container {
     display: flex;
-    background-color: #343434;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /*background-color: #2B2d2F;*/
     height: 100vh;
-    width: 80%;
-    border-radius: 5px;
-    margin: auto;
+    width: 100%;
     color: white;
+    margin-top: 100vh;
+}
+
+.section-body {
+    padding: 400px;
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .about-title {
     width: 100%;
     font-size: 44px;
     padding: 15px;
+}
+
+b {
+    color: #66D7D1;
 }
