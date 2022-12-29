@@ -11,7 +11,7 @@
 }
 
 .section-body {
-    padding: 400px;
+    padding: 400px 600px 400px 200px;
     font-family: "Roboto";
     font-size: 20px;
     line-height: 35px;
@@ -25,4 +25,9 @@
 
 b {
     color: #66D7D1;
+}
+
+.about-me-picture {
+    position: absolute;
+    right: 15%;
 }
