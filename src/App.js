@@ -5,8 +5,8 @@ import {AboutSection} from "./components/AboutSection/AboutSection";
 import {ProjectsSection} from "./components/Projects/ProjectsSection";
 import {ContactSection} from "./components/Contact/ContactSection";
 
-
 function App() {
+
   return (
       <div className={"App"}>
           <Navbar/>
