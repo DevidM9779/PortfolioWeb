@@ -1,15 +1,118 @@
 .contact-container {
     display: flex;
-    background-color: #2B2d2F;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100%;
     color: white;
     margin-top: 50vh;
-    padding-top: 100px;
+    padding-top: 160px;
 }
 
-.contact-title {
+.test {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+}
+
+*:focus {
+    outline: 0;
+}
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
     width: 100%;
-    font-size: 44px;
-    padding: 15px;
+    margin: 0;
+}
+
+form * {
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    color: #ffffff;
+    /*background: linear-gradient(90deg, black, #66D7D1);*/
+    /*background: linear-gradient(90deg, #b13e8b, #372056);*/
+    width: 100%;
+    height: 64px;
+    transition: width 333ms ease-in-out;
+    text-align: center;
+    padding: 18px 0;
+}
+
+form .field input[type="text"],
+form .field textarea {
+    border: none;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding-left: 19.5%;
+    color: #313a3d;
+    border-radius: 10px;
+}
+
+form #msg {
+    height: 64px;
+    resize: none;
+    transition: all 333ms ease-in-out;
+    padding-top: 18px;
+}
+
+form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+    height: 166px;
+}
+
+form input[type="text"]:focus + label,
+form input[type="text"]:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:not(:placeholder-shown) + label,
+form .field:hover label {
+    width: 18%;
+}
+
+form input[type="submit"] {
+    /*background: linear-gradient(90deg, #66D7D1, #6b8fda);*/
+    background: #66D7D1;
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    padding: 13px 50px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    background: #7db9e8;
 }
