@@ -1,4 +1,3 @@
-import CircleLogo from "../CircleLogo/CircleLogo";
 import './Navbar.css'
 import {useState} from "react";
 import {AiOutlineMenu} from "react-icons/ai"
