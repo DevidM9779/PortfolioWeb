@@ -12,17 +12,10 @@ export const AboutSection = () => {
         <div className={"about-container"} id={"about"}>
             <div data-aos="fade-right" className={"section-body"}>
                 <p>
-                    Welcome to my portfolio website! My name is <b>David</b> and I am a recent graduate with a degree in computer science and mathematics.
+                    I'm <b>David Milan-Medina</b>, a recent Computer Science and Mathematics graduate with a strong background in software development. I have experience with various programming languages and technologies, and I've worked on numerous projects, both academically and professionally.
                 </p>
                 <p>
-                    I have a strong foundation in software development, with experience in a variety of programming languages including java, javascript, python, c#, sql, swiftui...
-                    I am also skilled in react, node, express, firebase, web3 and more!
-                </p>
-                <p>
-                    During my time in school, I completed a number of projects that demonstrate my skills and ability to work on a team. I also completed an internship at <b>The App Factory</b> where I gained valuable experience working on real-world projects.
-                </p>
-                <p>
-                    I am excited to begin my career as a software developer and am eager to apply my skills and knowledge to new challenges. <u>Thank you</u> for visiting my portfolio website and I hope you find my work interesting and relevant.
+                    I invite you to explore my resume and projects below to learn more about my skills and experiences. Thank you for visiting!
                 </p>
             </div>
             
