@@ -8,7 +8,6 @@ export const AboutSection = () => {
     useEffect(() => {
         Aos.init({  duration: 2000  })
     }, []);
-
     return (
         <div className={"about-container"} id={"about"}>
             <div data-aos="fade-right" className={"section-body"}>
@@ -26,6 +25,7 @@ export const AboutSection = () => {
                     I am excited to begin my career as a software developer and am eager to apply my skills and knowledge to new challenges. <u>Thank you</u> for visiting my portfolio website and I hope you find my work interesting and relevant.
                 </p>
             </div>
+            
             <div data-aos="fade-left" className={"about-me-picture"}>
                 <img src="/undraw_ideas_re_7twj.svg" alt="About Me" height="200px" width="200px"></img>
             </div>

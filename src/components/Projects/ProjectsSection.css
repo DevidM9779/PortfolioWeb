@@ -2,16 +2,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10%;
+    gap: 4rem;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 5rem 0;
     width: 100%;
     color: white;
-    padding-top: 5%;
 }
 
-.projects-title {
+/* .projects-title {
     width: 100%;
     font-size: 44px;
     padding: 15px;
-}
+} */

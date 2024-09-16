@@ -5,7 +5,7 @@
     height: 100vh;
     width: 100%;
     color: white;
-    margin-top: 50vh;
+    margin-top: 20vh;
     padding-top: 160px;
 }
 
@@ -65,7 +65,7 @@ form .field label {
     /*background: linear-gradient(90deg, #b13e8b, #372056);*/
     width: 100%;
     height: 64px;
-    transition: width 333ms ease-in-out;
+    transition: width .6s ease-in-out;
     text-align: center;
     padding: 18px 0;
 }
@@ -84,7 +84,7 @@ form .field textarea {
 form #msg {
     height: 64px;
     resize: none;
-    transition: all 333ms ease-in-out;
+    transition: all .5s ease-in-out;
     padding-top: 18px;
 }
 
@@ -93,12 +93,36 @@ form textarea:not(:placeholder-shown)#msg {
     height: 166px;
 }
 
-form input[type="text"]:focus + label,
-form input[type="text"]:not(:placeholder-shown) + label,
-form textarea:focus + label,
-form textarea:not(:placeholder-shown) + label,
-form .field:hover label {
-    width: 18%;
+@media only screen and (max-width: 800px) {
+    form input[type="text"]:focus + label,
+    form input[type="text"]:not(:placeholder-shown) + label,
+    form textarea:focus + label,
+    form textarea:not(:placeholder-shown) + label,
+    form .field:hover label {
+        width: 0%;
+        color: transparent;
+    }
+
+    form .field input[type="text"],
+    form .field textarea {
+        border: none;
+        width: 100%;
+        height: 64px;
+        margin: 0;
+        padding-left: 3%;
+        color: #313a3d;
+        border-radius: 10px;
+    }
+
+}
+@media only screen and (min-width: 801px) {
+    form input[type="text"]:focus + label,
+    form input[type="text"]:not(:placeholder-shown) + label,
+    form textarea:focus + label,
+    form textarea:not(:placeholder-shown) + label,
+    form .field:hover label {
+        width: 18%;
+    }
 }
 
 form input[type="submit"] {
@@ -108,11 +132,15 @@ form input[type="submit"] {
     border: none;
     position: relative;
     padding: 13px 50px;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
     border-radius: 10px;
 }
 
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
     background: #7db9e8;
+}
+
+form input[type="submit"]:active {
+    background-color: white;
 }

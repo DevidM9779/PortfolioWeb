@@ -6,7 +6,6 @@ import * as ReactIcon from "react-icons/di"
 
 
 export const ProjectCard = (props) => {
-
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, [])
@@ -17,7 +16,9 @@ export const ProjectCard = (props) => {
 
     return (
         <div data-aos={props.animation} className={"project-card-container"} onClick={projectLink}>
-            <img src={props.logo} alt={"logo-image"}/>
+            <div className="img-container">
+                <img src={props.logo} alt={"logo-image"}/>
+            </div>
             <div className={"project-data"}>
                 <h1>{props.title}</h1>
                 <p>{props.description}</p>

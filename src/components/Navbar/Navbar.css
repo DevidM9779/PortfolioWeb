@@ -8,7 +8,7 @@
 }
 
 .navbar-bg {
-    background-color: black;
+    background-color: #000000;
 }
 
 .navbar-container {
@@ -49,3 +49,72 @@
     background-size: 100% 2px;
     color: #66D7D1;
 }
+
+
+/* Small devices (phones) */
+@media only screen and (max-width: 480px) {
+    .section-body {
+      font-size: 13px;
+      max-width: 100%;
+    }
+
+    .about-me-picture {
+        display: none;
+    }
+
+    .hamburger-icon {
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 24px;
+        height: 24px;
+        top: 3.5rem;
+        right: 3.5rem;
+        /* border-radius: 50%; */
+    }
+
+    .navbar {
+        display: none;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .section-body {
+      font-size: 15px;
+      max-width: 100%;
+    }
+
+    .about-me-picture {
+        display: none;
+    }
+
+    .hamburger-icon {
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 24px;
+        height: 24px;
+        top: 3.5rem;
+        right: 3.5rem;
+        /* border-radius: 50%; */
+    }
+
+    .navbar {
+        display: none;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 769px) and (max-width: 960px) {
+    .section-body {
+      font-size: 18px;
+      max-width: 100%;
+    }
+
+    .about-me-picture {
+      display: none;
+    }
+  }

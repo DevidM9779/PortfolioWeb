@@ -8,6 +8,8 @@ export const ContactSection = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
+        alert("Email sent. I'll get back to you shortly. \nThank you!")
+
         e.preventDefault();
 
         emailjs.sendForm('service_9je0nph', 'template_hh9aiod', form.current, 'zwdFIjwOvLU2Migi-')
@@ -45,8 +47,11 @@ export const ContactSection = () => {
                     </div>
                     <div className={"test"}><input type="submit" value="Send" /></div>
 
-
                 </form>
+
+                <div className={"social-media-links"}>
+
+                </div>
             </div>
         </div>
     )

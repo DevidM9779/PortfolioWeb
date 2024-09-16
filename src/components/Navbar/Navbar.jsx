@@ -1,6 +1,7 @@
 import CircleLogo from "../CircleLogo/CircleLogo";
 import './Navbar.css'
 import {useState} from "react";
+import {AiOutlineMenu} from "react-icons/ai"
 
 export const Navbar = () => {
     const [color, setColor] = useState(false);
@@ -12,7 +13,7 @@ export const Navbar = () => {
 
 
     const changeColor = () => {
-        if (window.scrollY > 30) setColor(true)
+        if (window.scrollY > 180) setColor(true)
         else setColor(false)
     }
 
@@ -20,12 +21,15 @@ export const Navbar = () => {
 
 
     return(
+        <div className="parent">
+            <div className={color ? "hamburger-icon navbar-bg" : "hamburger-icon"}>
+                <span aria-expanded="false"><AiOutlineMenu size={"24px"}/></span>
+            </div>
 
             <div className='navbar-container'>
                 <div className={color ? 'navbar navbar-bg' : 'navbar'}>
 
                     <div className={'navbar-menu'}>
-                        <a className={'navbar-item'} href={"#"}>Home</a>
                         <a className={'navbar-item'} href={"#about"}>About</a>
                         <a className={'navbar-item'} href={"#projects"}>Projects</a>
                         <a className={'navbar-item'} href={"#contact"}>Contact</a>
@@ -33,6 +37,6 @@ export const Navbar = () => {
 
                 </div>
             </div>
-
+        </div>
     )
 }

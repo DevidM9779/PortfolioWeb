@@ -1,6 +1,5 @@
 import "./HeroSection.css"
 import { Typewriter } from 'react-simple-typewriter'
-import { Navbar } from "../Navbar/Navbar";
 import { DownArrow } from "./DownArrow";
 
 export const HeroSection = () => {

@@ -24,16 +24,8 @@ export const ProjectsSection = () => {
                 description={"This app allows users to see how different sorting algorithms work in real-time. " +
                     "The app includes a variety of algorithms to choose from and visualizes the progress of the " +
                     "sorting process as it runs."}
-                technologies={["DiReact","DiFirebase"]}
+                technologies={["DiReact"]}
                 onClick={"https://github.com/DevidM9779/SortingAlgorithmsVisualizer"}
-            />
-            <ProjectCard
-                animation={"fade-right"}
-                logo={"/kfd.jpeg"}
-                title={"Kenosha Fire Department PWA"}
-                description={"A web app for the Kenosha local fire department."}
-                technologies={["DiReact","DiFirebase"]}
-                onClick={""}
             />
 
         </div>
