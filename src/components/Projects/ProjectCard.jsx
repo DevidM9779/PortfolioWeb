@@ -17,7 +17,7 @@ export const ProjectCard = (props) => {
     return (
         <div data-aos={props.animation} className={"project-card-container"} onClick={projectLink}>
             <div className="img-container">
-                <img src={props.logo} alt={"logo-image"}/>
+                <img src={props.logo} alt={"logo"}/>
             </div>
             <div className={"project-data"}>
                 <h1>{props.title}</h1>
