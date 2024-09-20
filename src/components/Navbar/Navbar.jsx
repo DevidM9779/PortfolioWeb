@@ -1,6 +1,5 @@
 import './Navbar.css'
 import {useState} from "react";
-import {AiOutlineMenu} from "react-icons/ai"
 
 export const Navbar = () => {
     const [color, setColor] = useState(false);
