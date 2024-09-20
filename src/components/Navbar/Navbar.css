@@ -74,9 +74,9 @@
         /* border-radius: 50%; */
     }
 
-    .navbar {
+    /* .navbar {
         display: none;
-    }
+    } */
   }
   
   /* Medium devices (tablets) */
@@ -108,13 +108,22 @@
   }
   
   /* Large devices (desktops) */
-  @media only screen and (min-width: 769px) and (max-width: 960px) {
-    .section-body {
-      font-size: 18px;
-      max-width: 100%;
-    }
-
-    .about-me-picture {
-      display: none;
-    }
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+      display: none; /* Hide navbar on mobile devices */
   }
+  
+  .hamburger-icon {
+      display: block; /* Show the hamburger icon on mobile devices */
+  }
+
+  .navbar-menu {
+      flex-direction: column; /* Display items in a column on mobile */
+      align-items: center;
+  }
+
+  .navbar-item {
+      padding: 10px 0; /* Add spacing between items */
+  }
+}

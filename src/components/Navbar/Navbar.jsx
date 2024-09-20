@@ -21,13 +21,8 @@ export const Navbar = () => {
 
     return(
         <div className="parent">
-            <div className={color ? "hamburger-icon navbar-bg" : "hamburger-icon"}>
-                <span aria-expanded="false"><AiOutlineMenu size={"24px"}/></span>
-            </div>
-
             <div className='navbar-container'>
                 <div className={color ? 'navbar navbar-bg' : 'navbar'}>
-
                     <div className={'navbar-menu'}>
                         <a className={'navbar-item'} href={"#about"}>About</a>
                         <a className={'navbar-item'} href={"#projects"}>Projects</a>
