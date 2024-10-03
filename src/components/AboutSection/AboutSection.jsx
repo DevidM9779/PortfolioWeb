@@ -2,6 +2,7 @@ import "./AboutSection.css"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { DownloadButton } from "./DowloadButton";
 
 
 export const AboutSection = () => {
@@ -17,6 +18,15 @@ export const AboutSection = () => {
                 <p>
                     I invite you to explore my resume and projects below to learn more about my skills and experiences. Thank you for visiting!
                 </p>
+                <DownloadButton
+                    as = "button"
+                    className = "custom-class"
+                    color = "rgb(102, 215, 209)"
+                    speed = "2s"
+                    link="https://drive.google.com/uc?export=download&id=1xbhLY7vuYIq22x0qYh4Wr540lPikHBA2"
+                >
+                    Brag Sheet
+                </DownloadButton>
             </div>
             
             <div data-aos="fade-left" className={"about-me-picture"}>
