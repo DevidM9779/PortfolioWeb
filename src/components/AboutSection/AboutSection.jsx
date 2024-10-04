@@ -7,7 +7,7 @@ import { DownloadButton } from "./DowloadButton";
 
 export const AboutSection = () => {
     useEffect(() => {
-        Aos.init({  duration: 2000  })
+        Aos.init({  duration: 1500  })
     }, []);
     return (
         <div className={"about-container"} id={"about"}>

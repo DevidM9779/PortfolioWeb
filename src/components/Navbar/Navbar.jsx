@@ -20,6 +20,12 @@ export const Navbar = () => {
 
     return(
         <div className="parent">
+            <div className='logo'>
+                <a href={"#"}>
+                    <img src="/darkLogo.png" alt="logo" />
+                </a>
+            </div>
+            <div className='spacer'></div>
             <div className='navbar-container'>
                 <div className={color ? 'navbar navbar-bg' : 'navbar'}>
                     <div className={'navbar-menu'}>
@@ -27,7 +33,6 @@ export const Navbar = () => {
                         <a className={'navbar-item'} href={"#projects"}>Projects</a>
                         <a className={'navbar-item'} href={"#contact"}>Contact</a>
                     </div>
-
                 </div>
             </div>
         </div>

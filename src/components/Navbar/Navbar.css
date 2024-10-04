@@ -1,3 +1,9 @@
+.spacer {
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
 .navbar {
     display: flex;
     justify-content: right;
@@ -5,10 +11,50 @@
     width: 100%;
     padding: 5px 50px;
     color: white;
+    /* background-color: red; */
+    border-radius: 50px;
 }
 
 .navbar-bg {
-    background-color: #000000;
+    background-color: black;
+}
+
+.parent {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    z-index: 9999;
+    background-color: black;
+    max-width: 1800px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    width: 20%;
+
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.logo img {
+    max-height: 50px;
 }
 
 .navbar-container {
@@ -17,7 +63,8 @@
     height: 80px;
     position: sticky;
     top: 0;
-    z-index: 99999999;
+    width: 100%;
+    /* background-color: red; */
 }
 
 .navbar-menu {
