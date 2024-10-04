@@ -4,7 +4,7 @@ import { DownArrow } from "./DownArrow";
 
 export const HeroSection = () => {
     return (
-        <div className={"hero"}>
+        <div className={"hero"} id={"home"}>
             <div className="home-container">
                 <div className={"home-title"}>Hi, I'm David Milan </div>
                 <div className="subtitle-container">

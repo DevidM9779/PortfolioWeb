@@ -21,7 +21,7 @@ export const Navbar = () => {
     return(
         <div className="parent">
             <div className='logo'>
-                <a href={"#"}>
+                <a href={"#home"}>
                     <img src="/darkLogo.png" alt="logo" />
                 </a>
             </div>
